@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      RegistrAPP
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,10 +9,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">RegistrAPP</ion-title>
+      
     </ion-toolbar>
   </ion-header>
+  
+  <div class="container ion-padding">
+    <h1 class="ion-text-center">Bienvenido {{ username }}</h1>
+    <ion-list class="rounded">
+      <ion-item>
+        <p>Usuario</p>
+        <p class="ion-text-end">{{ username }}</p>
+      </ion-item>
+    </ion-list>
 
-  <div id="container">
+    <ion-button>logout</ion-button>
   </div>
 </ion-content>
