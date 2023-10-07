@@ -2,8 +2,6 @@
 .login-box {
   max-width: 360px;
   width: 100%;
-  min-height: 270px;
-  max-height: 300px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -15,26 +13,6 @@
   margin: 4rem 0;
 }
 
-.d-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: space;
-  flex-flow: column nowrap;
-}
-
-.login-grid {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.login-row {
-  width: 100%;
-  flex:1;
-}
-
-.title {
-  width:100%;
-  text-align: center;
+.login-input {
+  margin-bottom: 1rem;
 }

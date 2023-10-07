@@ -12,24 +12,31 @@
   </ion-header>
   
   <ion-grid class="login-grid">
-    <ion-row class="login-row ion-align-items-center">
-      <ion-col class="d-flex">
+    <ion-row>
+      <ion-col>
+
         <ion-text class="title">
           <h1>Bienvenido a registerAPP</h1>
         </ion-text>
+
         <div class="login-box">
           <p class="ion-align-self-start">Iniciar Sesión</p>
-          <ion-input [(ngModel)]="usernameInput" type="username" label="Nombre de usuario" 
+
+          <ion-input class="login-input" [(ngModel)]="usernameInput" type="username" label="Nombre de usuario" 
           labelPlacement="floating" fill="outline" 
           placeholder="Ingrese su nombre de usuario">
           </ion-input>
-          <ion-input [(ngModel)]="passwordInput" type="password" label="Nombre de usuario" 
+
+          <ion-input class="login-input" [(ngModel)]="passwordInput" type="password" label="Contraseña" 
           labelPlacement="floating" fill="outline" 
           placeholder="Ingrese su contraseña">
           </ion-input>
+
           <ion-button (click)="loginUser()" >Ingresar</ion-button>
         </div>
+
       </ion-col>
+
     </ion-row>
 
   </ion-grid>
