@@ -1,49 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true" class="d-flex">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-text class="title">
+      <h1>Bienvenido a registerAPP</h1>
+    </ion-text>
   
-  <ion-grid class="login-grid">
-    <ion-row>
-      <ion-col>
-
-        <ion-text class="title">
-          <h1>Bienvenido a registerAPP</h1>
-        </ion-text>
-
-        <div class="login-box">
-          <p class="ion-align-self-start">Iniciar Sesión</p>
-
-          <ion-input class="login-input" [(ngModel)]="usernameInput" type="username" label="Nombre de usuario" 
-          labelPlacement="floating" fill="outline" 
-          placeholder="Ingrese su nombre de usuario">
-          </ion-input>
-
-          <ion-input class="login-input" [(ngModel)]="passwordInput" type="password" label="Contraseña" 
-          labelPlacement="floating" fill="outline" 
-          placeholder="Ingrese su contraseña">
-          </ion-input>
-
-          <ion-button (click)="loginUser()" >Ingresar</ion-button>
-        </div>
-
-      </ion-col>
-
-    </ion-row>
-
-  </ion-grid>
+    <div class="login-box">
+      <p class="ion-align-self-start">Iniciar Sesión</p>
+  
+      <ion-input class="login-input" [(ngModel)]="usernameInput" type="username" label="Nombre de usuario" 
+      labelPlacement="floating" fill="outline" 
+      placeholder="Ingrese su nombre de usuario">
+      </ion-input>
+  
+      <ion-input class="login-input" [(ngModel)]="passwordInput" type="password" label="Contraseña" 
+      labelPlacement="floating" fill="outline" 
+      placeholder="Ingrese su contraseña">
+      </ion-input>
+  
+      <ion-button (click)="loginUser()" >Ingresar</ion-button>
+    </div>
+  </div>
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>RegistrAPP</ion-title>
-  </ion-toolbar>
-</ion-footer>
